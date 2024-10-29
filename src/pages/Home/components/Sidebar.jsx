@@ -1,8 +1,9 @@
-import {VendorsLikedList, SidebarNav, UserCard} from "./"
+import {VendorsLikedList, SidebarNav, UserCard} from "./";
+import "../styles.css"
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className="sidebar">
       <UserCard />
       <div className="sub-section">
          <SidebarNav />

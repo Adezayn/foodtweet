@@ -1,4 +1,5 @@
-import logo from "../../assets/main-logo-no-bg.png";
+import { Link } from "react-router-dom";
+import logo from "../../assets/food-tweet-no-text-logo-no-bg.png";
 import Button from "../../components/Button";
 
 const LandingPage = () => {
@@ -7,9 +8,14 @@ const LandingPage = () => {
     <>
       <header>
         <nav>
-          <img src={logo} alt="foodtweet logo" />
+          <img
+            src={logo}
+            alt="foodtweet logo"
+            style={{ height: "50px", width: "50px" }}
+          />
           <ul>
-            <li>Home</li>
+            {/* <li>Home</li> */}
+            <Link to="/home">Home</Link>
             <li>About</li>
             <li>Vendors</li>
           </ul>
@@ -40,6 +46,6 @@ const LandingPage = () => {
       </footer>
     </>
   );
-}
+};
 
-export default LandingPage
+export default LandingPage;

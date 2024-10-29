@@ -1,0 +1,31 @@
+.homepage{
+    /* display: grid; */
+    /* padding: 0 1.5rem; */
+}
+.homepage-main{
+    display: flex;
+    background-color: #131415;
+    color: "#fff"
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F1F0CC;
+    /* #FF8C61 */
+}
+.header-logo{
+    width: 100px;
+}
+.sidebar{
+    flex-basis: 20%;
+}
+.mid-section{
+    flex-basis: 60%;
+}
+.aside{
+    flex-basis: 20%;
+}
+.vendors-catalogue{
+    
+}
