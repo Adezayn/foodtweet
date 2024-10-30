@@ -5,7 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 //const url = "https://www.course-api.com/react-useReducer-cart-project";
 
 const initialState = {
-  name: "Dolapo",
+  name: "Dolapo Adebanjo",
   username: "@ade_dolapo",
   image: "./assets/man-one.jpg",
   reviews: 12,

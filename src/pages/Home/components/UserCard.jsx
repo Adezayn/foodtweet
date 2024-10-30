@@ -11,8 +11,8 @@ const UserCard = () => {
       <div className="user-img-container">
         <img src={image ?? ""} alt={name} />
       </div>
-      <p className="name">{name}</p>
-      <p className="username">{username}</p>
+      <p className="name poppins-semibold">{name}</p>
+      <p className="username roboto-light">{username}</p>
       <div className="block">
         <div>
           <p>{reviews}</p>

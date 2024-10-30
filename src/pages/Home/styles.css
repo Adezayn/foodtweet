@@ -2,6 +2,7 @@
     /* display: grid; */
 }
 .homepage-main{
+    height: 93vh;
     display: flex;
     gap: 20px;
     padding: 0.8rem 1.5rem;
@@ -58,6 +59,9 @@
 .sidebar{
     flex-basis: 20%;
 }
+.sidebar-nav{
+    border-bottom: 1px solid #000;
+}
 .individual-nav{
     /* display: flex; */
     /* gap: 20px; */
@@ -83,6 +87,9 @@
     color: #000;
     border-radius: 10px;
 }
-.vendors-catalogue{
-  
+
+.vendors-catalogue .primary-text{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
