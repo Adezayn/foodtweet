@@ -1,14 +1,19 @@
+import { useSelector } from "react-redux";
+import "../styles.css";
 
-const UserCard = (props) => {
-    const {name, username, image, reviews, following} = props
+const UserCard = () => {
+    const { name, username, image, reviews, following } = useSelector(
+      (state) => state.user
+    );
+
   return (
-    <div>
-      <div>
+    <div className="user-card">
+      <div className="user-img-container">
         <img src={image ?? ""} alt={name} />
       </div>
-      <p>{name}</p>
-      <p>{username}</p>
-      <div>
+      <p className="name">{name}</p>
+      <p className="username">{username}</p>
+      <div className="block">
         <div>
           <p>{reviews}</p>
           <p>Reviews</p>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/food-tweet-no-text-logo-no-bg.png";
+import logo from "/assets/main-logo-no-bg.png";
 import Button from "../../components/Button";
 
 const LandingPage = () => {

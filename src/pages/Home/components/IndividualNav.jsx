@@ -1,12 +1,13 @@
+import "../styles.css";
 
 const IndividualNav = (props) => {
-    const {name, icon} = props;
+  const { name, icon } = props;
   return (
-    <div>
-        <img src={icon} />
-        <p>{name}</p>
+    <div className="individual-nav">
+      <img src={icon} />
+      <p>{name}</p>
     </div>
-  )
-}
+  );
+};
 
-export default IndividualNav
+export default IndividualNav;

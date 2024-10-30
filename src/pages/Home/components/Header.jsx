@@ -1,4 +1,4 @@
-import logo from "../../../assets/main-logo-no-bg.png"
+import logo from "/assets/main-logo-no-bg.png"
 import Searchbar from "../../../components/Searchbar";
 import "../styles.css"
 

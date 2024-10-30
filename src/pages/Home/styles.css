@@ -1,9 +1,10 @@
 .homepage{
     /* display: grid; */
-    /* padding: 0 1.5rem; */
 }
 .homepage-main{
     display: flex;
+    gap: 20px;
+    padding: 0.8rem 1.5rem;
     background-color: #131415;
     color: "#fff"
 }
@@ -12,13 +13,63 @@
     align-items: center;
     justify-content: space-between;
     background: #F1F0CC;
+    padding: 0.62rem 1.5rem;
     /* #FF8C61 */
 }
 .header-logo{
     width: 100px;
 }
+.user-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-img-container{
+    height: 110px;
+    width: 110px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-card .name{
+
+}
+.user-card .username{
+    
+}
+.user-card .block{
+    display: flex;
+    align-self: normal;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #F1F0CC;
+    color: #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.user-img-container img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .sidebar{
     flex-basis: 20%;
+}
+.individual-nav{
+    /* display: flex; */
+    /* gap: 20px; */
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+}
+.individual-nav:hover{
+    background-color: #FF8C61;
+    padding: 0.4rem;
+    border-radius: 10px;
 }
 .mid-section{
     flex-basis: 60%;
@@ -26,6 +77,12 @@
 .aside{
     flex-basis: 20%;
 }
+.sub-section{
+    padding: 1rem;
+    background: #F1F0CC;
+    color: #000;
+    border-radius: 10px;
+}
 .vendors-catalogue{
-    
+  
 }
