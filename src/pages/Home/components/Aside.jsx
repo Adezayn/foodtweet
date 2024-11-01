@@ -1,11 +1,10 @@
 import MealCard from "./MealCard";
-import "../styles.css"
 
 
 const Aside = () => {
   return (
     <div className="aside">
-      <p>list of meals</p>
+      <p>Healthy eating blogs</p>
       {/* List of meals */}
       <MealCard />
       {/* maybe a food blog */}

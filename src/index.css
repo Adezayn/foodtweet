@@ -35,6 +35,9 @@ Variables
   --large-screen-width: 1170px;
   --small-screen-width: 90vw;
   --fixed-width: 50rem;
+  --borderRadius: 0.75rem;
+  --small-btn-padding: 0.375rem 0.75rem;
+  --large-btn-padding: 0.375rem 1.75rem
 }
 * {
   margin: 0;
@@ -55,7 +58,19 @@ a {
 img {
   width: 100%;
   display: block;
+  object-fit: cover;
 }
+button {
+  cursor: pointer;
+  border: transparent;
+  border-radius: var(--borderRadius);
+  letter-spacing: var(--letterSpacing);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  text-transform: capitalize;
+  display: inline-block;
+}
+
 h1,
 h2,
 h3,

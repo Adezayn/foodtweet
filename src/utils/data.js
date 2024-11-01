@@ -1,19 +1,23 @@
 export const sidebarNavData = [
   {
     name: "Feed",
-    icon: "",
+    icon: "newspaper",
   },
   {
     name: "Bookmarks",
-    icon: "",
+    icon: "bookmarks",
   },
   {
     name: "Likes",
-    icon: "",
+    icon: "heart",
   },
   {
-    name: "Photos",
-    icon: "",
+    name: "Orders",
+    icon: "cart",
+  },
+  {
+    name: "Transactions",
+    icon: "wallet",
   },
 ];
 
@@ -37,7 +41,7 @@ export const allVendors = [
     id: 2,
     name: "Funmi Adebanjo",
     userName: "@Chef_FA",
-    followersCount: 300,
+    followersCount: 100,
     isTopRated: true,
     userImg: "./assets/food-vendors/chef-funmi-adebanjo.jpg",
     accountImg: "./assets/food-vendors/funmi-catering.jpg",
@@ -67,12 +71,12 @@ export const allVendors = [
     id: 4,
     name: "Hilda Baci",
     userName: "@hilda",
-    followersCount: 6000,
+    followersCount: 600,
     isTopRated: true,
     userImg: "./assets/food-vendors/chef-hilda.png",
     accountImg: "./assets/food-vendors/food-2.png",
     // is the user following the vendor
-    isFollowing: true,
+    isFollowing: false,
     dateJoined: "12-04-2024",
     description: "Specialized in all dishes",
     ratingCount: 4.0,
@@ -80,17 +84,47 @@ export const allVendors = [
   },
   {
     id: 5,
+    name: "Nelson Micheal",
+    userName: "@chefCupid",
+    followersCount: 80,
+    isTopRated: true,
+    userImg: "./assets/food-vendors/Chef_cupid.png",
+    accountImg: "./assets/food-vendors/food-3.png",
+    // is the user following the vendor
+    isFollowing: false,
+    dateJoined: "09-03-2024",
+    description: "Specialized in pastries and food photography",
+    ratingCount: 4.0,
+    reviewCount: 56,
+  },
+  {
+    id: 6,
     name: "Mariam Adamu",
     userName: "@chef_arewa",
-    followersCount: 900,
+    followersCount: 15,
     isTopRated: true,
     userImg: "./assets/food-vendors/Chef_arewa.png",
-    accountImg: "./assets/food-vendors/food-3.png",
+    accountImg: "./assets/food-vendors/food-4.png",
     // is the user following the vendor
     isFollowing: true,
     dateJoined: "05-01-2024",
     description: "Specialized in all arewa dishes",
     ratingCount: 4.0,
     reviewCount: 5,
+  },
+  {
+    id: 7,
+    name: "Gbubemi Fregene",
+    userName: "@chef_fregz",
+    followersCount: 1000,
+    isTopRated: true,
+    userImg: "./assets/food-vendors/Chef-fregz.png",
+    accountImg: "./assets/food-vendors/food-5.png",
+    // is the user following the vendor
+    isFollowing: true,
+    dateJoined: "05-01-2024",
+    description: "Specialized in all French culinary",
+    ratingCount: 4.8,
+    reviewCount: 500,
   },
 ];

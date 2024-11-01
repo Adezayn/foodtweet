@@ -29,10 +29,12 @@ const vendorsSlice = createSlice({
     // clearCart: (state) => {
     //   state.cartItems = [];
     // },
-    // removeItem: (state, action) => {
-    //   const itemId = action.payload;
-    //   state.cartItems = state.cartItems.filter((item) => item.id !== itemId);
-    // },
+    followVendor: (state, action) => {
+      const itemId = action.payload;
+       state.allVendors.forEach((vendor) => {
+        vendor.id === itemId ? vendor.isFollowing = true : vendor;
+      });
+    },
     // increase: (state, { payload }) => {
     //   const cartItem = state.cartItems.find((item) => item.id === payload.id);
     //   cartItem.amount = cartItem.amount + 1;
@@ -70,7 +72,6 @@ const vendorsSlice = createSlice({
 });
 
 // console.log(cartSlice);
-// export const {} =
-//   mealSlice.actions;
+export const {followVendor} = vendorsSlice.actions;
 
 export default vendorsSlice.reducer;

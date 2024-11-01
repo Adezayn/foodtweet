@@ -4,7 +4,7 @@ const IndividualNav = (props) => {
   const { name, icon } = props;
   return (
     <div className="individual-nav">
-      <img src={icon} />
+      <ion-icon name={icon}></ion-icon>
       <p>{name}</p>
     </div>
   );

@@ -1,8 +1,16 @@
 
+import { useDispatch } from "react-redux";
 import Button from "../../../components/Button";
+import { followVendor } from "../../../redux/slices/vendorsSlice";
 
 const VendorCard = (props) => {
-  const {accountImg, userImg, name, userName, followersCount, description, ratingCount, reviewCount, dateJoined, isFollowing} = props;
+  const dispatch = useDispatch();
+  const {id, accountImg, userImg, name, userName, followersCount, description, ratingCount, reviewCount, dateJoined, isFollowing} = props;
+
+  const followHandler = () => {
+    console.log("triggered follow")
+     dispatch(followVendor(id));
+  }
 
   return (
     <div className="vendor-card">
@@ -40,10 +48,16 @@ const VendorCard = (props) => {
               <p>{userName}</p>
             </div>
           </div>
-          <p>{description}</p>
+          <p className="description">{description}</p>
         </div>
       </div>
-      {!isFollowing ? <Button>Follow</Button> : <Button>Unfollow</Button>}
+      {!isFollowing ? (
+        <Button className="btn-vendor-card" inputHandler={followHandler}>
+          Follow
+        </Button>
+      ) : (
+        <Button>Unfollow</Button>
+      )}
     </div>
   );
 }

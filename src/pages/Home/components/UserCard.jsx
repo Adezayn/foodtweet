@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import "../styles.css";
 
 const UserCard = () => {
     const { name, username, image, reviews, following } = useSelector(
