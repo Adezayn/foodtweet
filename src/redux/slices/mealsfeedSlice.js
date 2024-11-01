@@ -29,19 +29,45 @@ const mealsfeedSlice = createSlice({
     clearMealsFeed: (state) => {
       state.allMealsFeed = [];
     },
-    // getAllMealsFeed: (state) => {
-    //   state.allMealsFeed = allMealsFeed.map(feed => {
-    //    return {
-    //      ...feed,
-    //      author: allVendors[feed.authorId]?.userName,
-    //      authorImg: allVendors[feed.authorId]?.accountImg,
-    //      caption: allFoodsByVendors[feed.postId]?.caption
-    //    };
-    // })
-    // },
+    postLikeTweet: (state, action) => {
+      const itemId = action.payload;
+      state.allMealsFeed.forEach((feed) => {
+        if (feed.postId === itemId) {
+          feed.likes += 1;
+          feed.isLikedByUser = true;
+        }
+      });
+    },
+    postUnlikeTweet: (state, action) => {
+      const itemId = action.payload;
+      state.allMealsFeed.forEach((feed) => {
+        if (feed.postId === itemId) {
+          feed.likes -= 1;
+          feed.isLikedByUser = false;
+        }
+      });
+    },
+    postBookmarkTweet: (state, action) => {
+      const itemId = action.payload;
+      state.allMealsFeed.forEach((feed) => {
+        if (feed.postId === itemId) {
+          feed.bookmarks += 1;
+          feed.isBookmarkedByUser = true;
+        }
+      });
+    },
+    postUnbookmarkTweet: (state, action) => {
+      const itemId = action.payload;
+      state.allMealsFeed.forEach((feed) => {
+        if (feed.postId === itemId) {
+          feed.bookmarks -= 1;
+          feed.isBookmarkedByUser = false;
+        }
+      });
+    },
   },
 });
 
-export const { clearMealsFeed } = mealsfeedSlice.actions;
+export const { clearMealsFeed, postLikeTweet, postUnlikeTweet, postBookmarkTweet, postUnbookmarkTweet } = mealsfeedSlice.actions;
 
 export default mealsfeedSlice.reducer;
