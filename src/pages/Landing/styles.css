@@ -1,0 +1,26 @@
+.landing-page{
+     padding: 0.8rem 1.5rem;
+     color: #000;
+}
+.landing-page nav, .landing-page nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-page nav ul{
+    list-style: none;
+    gap: 20px;
+}
+
+.header-logo, .footer-logo{
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+}

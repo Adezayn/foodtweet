@@ -51,13 +51,15 @@ const VendorCard = (props) => {
           <p className="description">{description}</p>
         </div>
       </div>
-      {!isFollowing ? (
-        <Button className="btn-vendor-card" inputHandler={followHandler}>
-          Follow
-        </Button>
-      ) : (
-        <Button>Unfollow</Button>
-      )}
+      <div className="btn-container">
+        {!isFollowing ? (
+          <Button className="btn-vendor-card" inputHandler={followHandler}>
+            Follow
+          </Button>
+        ) : (
+          <Button>Unfollow</Button>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import { Sidebar, Header, VendorsCatalogue, MealsFeed, Aside } from "./components"
+import { Outlet } from "react-router-dom";
+import { Sidebar, Header, Aside } from "./components"
 import "./styles.css"
 
 const HomePage = () => {
@@ -8,8 +9,7 @@ const HomePage = () => {
       <main className="homepage-main">
         <Sidebar />
         <div className="mid-section">
-          <VendorsCatalogue />
-          <MealsFeed />
+          <Outlet />
         </div>
         <Aside />
       </main>

@@ -1,15 +1,12 @@
-import MealCard from "./MealCard";
+import VendorsCatalogue from "./VendorsCatalogue";
 
 
 const Aside = () => {
   return (
     <div className="aside">
-      <p>Healthy eating blogs</p>
-      {/* List of meals */}
-      <MealCard />
-      {/* maybe a food blog */}
+      <VendorsCatalogue />
     </div>
-  )
+  );
 }
 
 export default Aside

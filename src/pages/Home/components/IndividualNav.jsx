@@ -1,12 +1,13 @@
+import { NavLink } from "react-router-dom";
 import "../styles.css";
 
 const IndividualNav = (props) => {
-  const { name, icon } = props;
+  const { name, icon, path } = props;
   return (
-    <div className="individual-nav">
+    <NavLink to={path} className="individual-nav">
       <ion-icon name={icon}></ion-icon>
       <p>{name}</p>
-    </div>
+    </NavLink>
   );
 };
 

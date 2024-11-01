@@ -1,8 +1,8 @@
 .homepage{
     /* display: grid; */
+    max-height: 100%;
 }
 .homepage-main{
-    height: 93vh;
     display: flex;
     gap: 20px;
     padding: 0.8rem 1.5rem;
@@ -121,12 +121,14 @@
 }
 
 .vendors-scrollable{
-    margin: 20px 0;
+    margin-top: 20px;
+    height: 80vh;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     white-space: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 
 }
@@ -180,6 +182,10 @@ p.description{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.vendor-card .btn-container{
+    display: flex;
+    justify-content: end;
+}
 .btn-vendor-card{
    color: #F1F0CC;
    background-color: #35332D;
@@ -201,4 +207,50 @@ p.description{
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
+}
+
+/* ------------------ */
+.meals-feed-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+}
+.tweet{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0.2px solid rgba(249, 248, 248, 0.3) ;
+}
+.tweet-primary-container{
+    position: relative;
+}
+.tweet-primary{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    background: #1F2124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tweet-primary img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.tweet .food-img{
+    height: 150px;
+    border-radius: 5px;
+}
+.tweet .socials-container{
+  display: flex;
+  justify-content: space-between;
+}
+.tweet .socials{
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
