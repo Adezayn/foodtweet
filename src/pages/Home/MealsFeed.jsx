@@ -1,6 +1,7 @@
 
 import { useSelector } from "react-redux";
-import Tweet from "./Tweet";
+import { Tweet } from "./components";
+
 const MealsFeed = () => {
   const { allMealsFeed } = useSelector((state) => state.mealsFeed);
 

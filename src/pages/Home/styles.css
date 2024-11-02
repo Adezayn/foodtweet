@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: space-between;
     background: #F1F0CC;
+    /* background: #FFD37D; */
     padding: 0.62rem 1.5rem;
     /* #FF8C61 */
 }
@@ -77,6 +78,7 @@
 }
 .individual-nav:hover{
     background-color:  #F1F0CC;
+    /* background-color: #FFD37D; */
     color: #000;
     padding: 0.6rem;
     border-radius: 10px;
@@ -269,11 +271,11 @@ p.description{
    color: #33D141;
 }
 .tweet .socials .btn-cream:hover{
-   color: #F1F0CC;
+   color: #FFD37D;
 }
 .tweet .socials .clicked-button{
    color: red;
 }
 .tweet .socials .bookmarked-button{
-   color: #F1F0CC;
+   color: #FFD37D;
 }

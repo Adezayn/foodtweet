@@ -53,7 +53,10 @@ const Tweet = (props) => {
           <p>{comments?.length}</p>
         </div>
         <div className="socials">
-          <Button className={isBookmarkedByUser ? "bookmark" : "btn-cream"} inputHandler={bookmarkTweetHandler}>
+          <Button
+            className={isBookmarkedByUser ? "bookmarked-button" : "btn-cream"}
+            inputHandler={bookmarkTweetHandler}
+          >
             <ion-icon
               name={isBookmarkedByUser ? "bookmark" : "bookmark-outline"}
             ></ion-icon>

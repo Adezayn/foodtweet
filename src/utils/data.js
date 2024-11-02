@@ -7,12 +7,12 @@ export const sidebarNavData = [
   {
     name: "Bookmarks",
     icon: "bookmarks",
-    path: "/",
+    path: "/bookmarks",
   },
   {
     name: "Likes",
     icon: "heart",
-    path: "/",
+    path: "/likes",
   },
   {
     name: "Orders",
